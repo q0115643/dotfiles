@@ -59,7 +59,7 @@ let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
 set laststatus=2 " turn on bottom bar 
 " nmap
 nmap <leader>nerd :NERDTreeToggle<CR>
-nmap <leader>term :below term<CR>source $HOME/.bash_profile<CR>c<CR>
+nmap <leader>term :below term<CR>
 " for ctrlp
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|public$\|log$\|tmp$\|vendor$',
