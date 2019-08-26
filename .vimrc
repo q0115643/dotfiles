@@ -56,6 +56,7 @@ filetype plugin indent on    " required
 
 " for vim-airline
 let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
+let g:airline#extensions#tabline#fnamemod = ':t'
 set laststatus=2 " turn on bottom bar 
 " nmap
 nmap <leader>nerd :NERDTreeToggle<CR>
