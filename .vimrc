@@ -2,15 +2,15 @@
 syntax on
 set number
 set ignorecase
+set autoindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-autocmd FileType make setlocal noexpandtab
 set termwinsize=10x0
 set autoread
-set paste
 set splitright
+set clipboard=unnamed
 let mapleader=","
 
 if has("syntax")
@@ -39,6 +39,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'udalov/kotlin-vim'
 Plugin 'tomasr/molokai'
 Plugin 'dracula/vim'
+Plugin 'fatih/vim-go'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -66,10 +68,19 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|public$\|log$\|tmp$\|vendor$',
   \ 'file': '\v\.(exe|so|dll)$'
 \ }
+" for make filetype
+autocmd FileType make setlocal noexpandtab
 " colorscheme
 let g:dracula_italic = 0
 colorscheme dracula
 highlight Normal ctermbg=None
 " nerdtree
 let NERDTreeShowHidden=1
-
+" vim-go
+let g:go_fmt_command="goimports"
+let g:go_list_type="quickfix"
+let g:go_addtags_transform="camelcase"
+let g:go_highlight_fields=1
+let g:go_highlight_types=1
+let g:go_highlight_functions=1
+let g:go_highlight_function_calls=1
