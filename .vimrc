@@ -10,6 +10,7 @@ set expandtab
 set termwinsize=10x0
 set autoread
 set splitright
+set backspace=2
 set clipboard=unnamed
 let mapleader=","
 
