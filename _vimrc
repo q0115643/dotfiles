@@ -13,6 +13,8 @@ set autoread
 set splitright
 set clipboard=unnamed
 set backspace=2
+set hls
+set ic
 let mapleader=","
 
 if has("syntax")
