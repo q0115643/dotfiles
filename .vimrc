@@ -15,6 +15,7 @@ set clipboard=unnamed
 set hls
 set ic
 let mapleader=","
+nnoremap <CR> :noh<CR><CR>
 
 if has("syntax")
  syntax on

@@ -3,4 +3,5 @@ set ignorecase
 set clipboard=unnamed
 set hls
 set ic
+nnoremap <CR> :noh<CR><CR>
 

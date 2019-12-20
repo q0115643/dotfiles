@@ -2,4 +2,5 @@ set clipboard=unnamed
 set hls
 set ic
 set nu
+nnoremap <CR> :noh<CR><CR>
 
