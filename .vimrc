@@ -45,6 +45,7 @@ Plugin 'tomasr/molokai'
 Plugin 'dracula/vim'
 Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'stephpy/vim-yaml'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
