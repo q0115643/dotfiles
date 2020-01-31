@@ -7,7 +7,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set termwinsize=10x0
 set autoread
 set splitright
 set backspace=2
@@ -16,6 +15,7 @@ set hls
 set ic
 let mapleader=","
 nnoremap <CR> :noh<CR><CR>
+nnoremap <C-c> :bp\|bd #<CR>
 
 if has("syntax")
  syntax on
@@ -89,3 +89,4 @@ let g:go_highlight_fields=1
 let g:go_highlight_types=1
 let g:go_highlight_functions=1
 let g:go_highlight_function_calls=1
+
