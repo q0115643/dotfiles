@@ -10,7 +10,6 @@ set expandtab
 set autoread
 set splitright
 set backspace=2
-set clipboard=unnamed
 set hls
 set ic
 let mapleader=","
@@ -51,6 +50,7 @@ Plugin 'dracula/vim'
 Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'stephpy/vim-yaml'
+Plugin 'hashivim/vim-terraform'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -85,7 +85,7 @@ let g:dracula_italic = 0
 colorscheme dracula
 highlight Normal ctermbg=None
 " nerdtree
-let NERDTreeShowHidden=1
+" let NERDTreeShowHidden=1
 " vim-go
 let g:go_fmt_command="goimports"
 let g:go_list_type="quickfix"
