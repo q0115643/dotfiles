@@ -14,9 +14,9 @@ set clipboard=unnamed
 set hls
 set ic
 let mapleader=","
-map <C-c> "+y"
+map <C-y> "+y"
 nnoremap <CR> :noh<CR><CR>
-nnoremap <C-w> :bp\|bd #<CR>
+nnoremap <C-c> :bp\|bd #<CR>
 nnoremap <C-Up>    <C-w>+
 nnoremap <C-Down>  <C-w>-
 nnoremap <C-Left>  <C-w><
