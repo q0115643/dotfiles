@@ -8,6 +8,8 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH="$PATH:/home/rokrokss/environment/istio-1.4.4/bin"
+export PATH="$PATH:/usr/local/go/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/rokrokss/.oh-my-zsh"
@@ -81,6 +83,7 @@ plugins=(
   git
   kubectl
   kube-ps1
+  terraform
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -117,7 +120,13 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 source <(kubectl completion zsh)
+
+# kube-ps1
 PROMPT=$PROMPT'$(kube_ps1) '
 KUBE_PS1_SYMBOL_USE_IMG=true
 KUBE_PS1_ENABLED=false
+
+# vault
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/vault vault
 

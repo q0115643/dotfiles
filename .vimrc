@@ -50,7 +50,9 @@ Plugin 'dracula/vim'
 Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'stephpy/vim-yaml'
-Plugin 'hashivim/vim-terraform'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'hashivim/vim-hashicorp-tools'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
