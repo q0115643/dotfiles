@@ -15,7 +15,7 @@ set ic
 let mapleader=","
 map <C-y> "+y"
 nnoremap <CR> :noh<CR><CR>
-nnoremap <C-c> :bp\|bd #<CR>
+nnoremap <C-d> :bp\|bd #<CR>
 nnoremap <C-Up>    <C-w>+
 nnoremap <C-Down>  <C-w>-
 nnoremap <C-Left>  <C-w><
